@@ -1,0 +1,390 @@
+vlib modelsim_lib/work
+vlib modelsim_lib/msim
+
+vlib modelsim_lib/msim/xilinx_vip
+vlib modelsim_lib/msim/xpm
+vlib modelsim_lib/msim/axi_infrastructure_v1_1_0
+vlib modelsim_lib/msim/axi_vip_v1_1_21
+vlib modelsim_lib/msim/processing_system7_vip_v1_0_23
+vlib modelsim_lib/msim/xil_defaultlib
+vlib modelsim_lib/msim/xlconstant_v1_1_10
+vlib modelsim_lib/msim/proc_sys_reset_v5_0_17
+vlib modelsim_lib/msim/smartconnect_v1_0
+vlib modelsim_lib/msim/axi_register_slice_v2_1_35
+vlib modelsim_lib/msim/axi_lite_ipif_v3_0_4
+vlib modelsim_lib/msim/axi_uartlite_v2_0_39
+vlib modelsim_lib/msim/axis_infrastructure_v1_1_1
+vlib modelsim_lib/msim/axis_register_slice_v1_1_35
+vlib modelsim_lib/msim/axis_switch_v1_1_35
+vlib modelsim_lib/msim/axi_datamover_v5_1_37
+vlib modelsim_lib/msim/axi_sg_v4_1_21
+vlib modelsim_lib/msim/axi_dma_v7_1_36
+vlib modelsim_lib/msim/generic_baseblocks_v2_1_2
+vlib modelsim_lib/msim/fifo_generator_v13_2_13
+vlib modelsim_lib/msim/axi_data_fifo_v2_1_35
+vlib modelsim_lib/msim/axi_crossbar_v2_1_37
+vlib modelsim_lib/msim/xlconcat_v2_1_7
+vlib modelsim_lib/msim/axis_subset_converter_v1_1_35
+vlib modelsim_lib/msim/axi_protocol_converter_v2_1_36
+vlib modelsim_lib/msim/axi_clock_converter_v2_1_34
+vlib modelsim_lib/msim/blk_mem_gen_v8_4_11
+vlib modelsim_lib/msim/axi_dwidth_converter_v2_1_36
+
+vmap xilinx_vip modelsim_lib/msim/xilinx_vip
+vmap xpm modelsim_lib/msim/xpm
+vmap axi_infrastructure_v1_1_0 modelsim_lib/msim/axi_infrastructure_v1_1_0
+vmap axi_vip_v1_1_21 modelsim_lib/msim/axi_vip_v1_1_21
+vmap processing_system7_vip_v1_0_23 modelsim_lib/msim/processing_system7_vip_v1_0_23
+vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
+vmap xlconstant_v1_1_10 modelsim_lib/msim/xlconstant_v1_1_10
+vmap proc_sys_reset_v5_0_17 modelsim_lib/msim/proc_sys_reset_v5_0_17
+vmap smartconnect_v1_0 modelsim_lib/msim/smartconnect_v1_0
+vmap axi_register_slice_v2_1_35 modelsim_lib/msim/axi_register_slice_v2_1_35
+vmap axi_lite_ipif_v3_0_4 modelsim_lib/msim/axi_lite_ipif_v3_0_4
+vmap axi_uartlite_v2_0_39 modelsim_lib/msim/axi_uartlite_v2_0_39
+vmap axis_infrastructure_v1_1_1 modelsim_lib/msim/axis_infrastructure_v1_1_1
+vmap axis_register_slice_v1_1_35 modelsim_lib/msim/axis_register_slice_v1_1_35
+vmap axis_switch_v1_1_35 modelsim_lib/msim/axis_switch_v1_1_35
+vmap axi_datamover_v5_1_37 modelsim_lib/msim/axi_datamover_v5_1_37
+vmap axi_sg_v4_1_21 modelsim_lib/msim/axi_sg_v4_1_21
+vmap axi_dma_v7_1_36 modelsim_lib/msim/axi_dma_v7_1_36
+vmap generic_baseblocks_v2_1_2 modelsim_lib/msim/generic_baseblocks_v2_1_2
+vmap fifo_generator_v13_2_13 modelsim_lib/msim/fifo_generator_v13_2_13
+vmap axi_data_fifo_v2_1_35 modelsim_lib/msim/axi_data_fifo_v2_1_35
+vmap axi_crossbar_v2_1_37 modelsim_lib/msim/axi_crossbar_v2_1_37
+vmap xlconcat_v2_1_7 modelsim_lib/msim/xlconcat_v2_1_7
+vmap axis_subset_converter_v1_1_35 modelsim_lib/msim/axis_subset_converter_v1_1_35
+vmap axi_protocol_converter_v2_1_36 modelsim_lib/msim/axi_protocol_converter_v2_1_36
+vmap axi_clock_converter_v2_1_34 modelsim_lib/msim/axi_clock_converter_v2_1_34
+vmap blk_mem_gen_v8_4_11 modelsim_lib/msim/blk_mem_gen_v8_4_11
+vmap axi_dwidth_converter_v2_1_36 modelsim_lib/msim/axi_dwidth_converter_v2_1_36
+
+vlog -work xilinx_vip  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"C:/Xilinx/2025.1/Vivado/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
+"C:/Xilinx/2025.1/Vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" \
+"C:/Xilinx/2025.1/Vivado/data/xilinx_vip/hdl/xil_common_vip_pkg.sv" \
+"C:/Xilinx/2025.1/Vivado/data/xilinx_vip/hdl/axi4stream_vip_pkg.sv" \
+"C:/Xilinx/2025.1/Vivado/data/xilinx_vip/hdl/axi_vip_pkg.sv" \
+"C:/Xilinx/2025.1/Vivado/data/xilinx_vip/hdl/axi4stream_vip_if.sv" \
+"C:/Xilinx/2025.1/Vivado/data/xilinx_vip/hdl/axi_vip_if.sv" \
+"C:/Xilinx/2025.1/Vivado/data/xilinx_vip/hdl/clk_vip_if.sv" \
+"C:/Xilinx/2025.1/Vivado/data/xilinx_vip/hdl/rst_vip_if.sv" \
+
+vlog -work xpm  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+"C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+vcom -work xpm  -93  \
+"C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vlog -work axi_infrastructure_v1_1_0  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
+
+vlog -work axi_vip_v1_1_21  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f16f/hdl/axi_vip_v1_1_vl_rfs.sv" \
+
+vlog -work processing_system7_vip_v1_0_23  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl/processing_system7_vip_v1_0_vl_rfs.sv" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_1/sim/design_1_processing_system7_0_1.v" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/sim/bd_48ac.v" \
+
+vlog -work xlconstant_v1_1_10  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_48ac_one_0.v" \
+
+vcom -work proc_sys_reset_v5_0_17  -93  \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_48ac_psr_aclk_0.vhd" \
+
+vlog -work smartconnect_v1_0  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/3718/hdl/sc_switchboard_v1_0_vl_rfs.sv" \
+
+vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_48ac_arinsw_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_48ac_rinsw_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_48ac_awinsw_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_48ac_winsw_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_48ac_binsw_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_48ac_aroutsw_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_48ac_routsw_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_48ac_awoutsw_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_48ac_woutsw_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_48ac_boutsw_0.sv" \
+
+vlog -work smartconnect_v1_0  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/sc_node_v1_0_vl_rfs.sv" \
+
+vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_48ac_arni_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_48ac_rni_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_48ac_awni_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_48ac_wni_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_48ac_bni_0.sv" \
+
+vlog -work smartconnect_v1_0  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/d800/hdl/sc_mmu_v1_0_vl_rfs.sv" \
+
+vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_48ac_s00mmu_0.sv" \
+
+vlog -work smartconnect_v1_0  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/2da8/hdl/sc_transaction_regulator_v1_0_vl_rfs.sv" \
+
+vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_48ac_s00tr_0.sv" \
+
+vlog -work smartconnect_v1_0  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/dce3/hdl/sc_si_converter_v1_0_vl_rfs.sv" \
+
+vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_48ac_s00sic_0.sv" \
+
+vlog -work smartconnect_v1_0  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/cef3/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
+
+vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_48ac_s00a2s_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_48ac_sarn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_22/sim/bd_48ac_srn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_23/sim/bd_48ac_sawn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_24/sim/bd_48ac_swn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_25/sim/bd_48ac_sbn_0.sv" \
+
+vlog -work smartconnect_v1_0  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/7f4f/hdl/sc_sc2axi_v1_0_vl_rfs.sv" \
+
+vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_48ac_m00s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_27/sim/bd_48ac_m00arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_28/sim/bd_48ac_m00rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_29/sim/bd_48ac_m00awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_30/sim/bd_48ac_m00wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_31/sim/bd_48ac_m00bn_0.sv" \
+
+vlog -work smartconnect_v1_0  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/0133/hdl/sc_exit_v1_0_vl_rfs.sv" \
+
+vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_32/sim/bd_48ac_m00e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_33/sim/bd_48ac_m01s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_34/sim/bd_48ac_m01arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_35/sim/bd_48ac_m01rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_36/sim/bd_48ac_m01awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_37/sim/bd_48ac_m01wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/sim/bd_48ac_m01bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/sim/bd_48ac_m01e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_40/sim/bd_48ac_m02s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_41/sim/bd_48ac_m02arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_42/sim/bd_48ac_m02rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_43/sim/bd_48ac_m02awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_44/sim/bd_48ac_m02wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_45/sim/bd_48ac_m02bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_46/sim/bd_48ac_m02e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_47/sim/bd_48ac_m03s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_48/sim/bd_48ac_m03arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_49/sim/bd_48ac_m03rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_50/sim/bd_48ac_m03awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_51/sim/bd_48ac_m03wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_52/sim/bd_48ac_m03bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/sim/bd_48ac_m03e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_54/sim/bd_48ac_m04s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_55/sim/bd_48ac_m04arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_56/sim/bd_48ac_m04rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_57/sim/bd_48ac_m04awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_58/sim/bd_48ac_m04wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_59/sim/bd_48ac_m04bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_60/sim/bd_48ac_m04e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_61/sim/bd_48ac_m05s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_62/sim/bd_48ac_m05arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_63/sim/bd_48ac_m05rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_64/sim/bd_48ac_m05awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_65/sim/bd_48ac_m05wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_66/sim/bd_48ac_m05bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_67/sim/bd_48ac_m05e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_68/sim/bd_48ac_m06s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_69/sim/bd_48ac_m06arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_70/sim/bd_48ac_m06rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_71/sim/bd_48ac_m06awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_72/sim/bd_48ac_m06wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_73/sim/bd_48ac_m06bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_74/sim/bd_48ac_m06e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_75/sim/bd_48ac_m07s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_76/sim/bd_48ac_m07arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_77/sim/bd_48ac_m07rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_78/sim/bd_48ac_m07awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_79/sim/bd_48ac_m07wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_80/sim/bd_48ac_m07bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_81/sim/bd_48ac_m07e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_82/sim/bd_48ac_m08s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_83/sim/bd_48ac_m08arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_84/sim/bd_48ac_m08rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_85/sim/bd_48ac_m08awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_86/sim/bd_48ac_m08wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_87/sim/bd_48ac_m08bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_88/sim/bd_48ac_m08e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_89/sim/bd_48ac_m09s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_90/sim/bd_48ac_m09arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_91/sim/bd_48ac_m09rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_92/sim/bd_48ac_m09awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_93/sim/bd_48ac_m09wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_94/sim/bd_48ac_m09bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_95/sim/bd_48ac_m09e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_96/sim/bd_48ac_m10s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_97/sim/bd_48ac_m10arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_98/sim/bd_48ac_m10rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_99/sim/bd_48ac_m10awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_100/sim/bd_48ac_m10wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_101/sim/bd_48ac_m10bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_102/sim/bd_48ac_m10e_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_103/sim/bd_48ac_m11s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_104/sim/bd_48ac_m11arn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_105/sim/bd_48ac_m11rn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_106/sim/bd_48ac_m11awn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_107/sim/bd_48ac_m11wn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_108/sim/bd_48ac_m11bn_0.sv" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_109/sim/bd_48ac_m11e_0.sv" \
+
+vlog -work axi_register_slice_v2_1_35  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/sim/design_1_smartconnect_0_0.sv" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
+
+vcom -work axi_lite_ipif_v3_0_4  -93  \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vcom -work axi_uartlite_v2_0_39  -93  \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ipshared/4bd2/hdl/I2C_Reader_slave_lite_v1_0_S00_AXI.v" \
+"../../../bd/design_1/ipshared/4bd2/hdl/I2C_Reader_master_stream_v1_0_M00_AXIS.v" \
+"../../../bd/design_1/ipshared/4bd2/hdl/I2C_Reader.v" \
+"../../../bd/design_1/ip/design_1_I2C_Reader_0_0/sim/design_1_I2C_Reader_0_0.v" \
+"../../../bd/design_1/ipshared/e510/hdl/IMU_relay_slave_lite_v1_0_S00_AXI.v" \
+"../../../bd/design_1/ipshared/e510/hdl/IMU_relay_slave_stream_v1_0_S00_AXIS.v" \
+"../../../bd/design_1/ipshared/e510/hdl/IMU_relay_master_stream_v1_0_M00_AXIS.v" \
+"../../../bd/design_1/ipshared/e510/hdl/IMU_relay.v" \
+"../../../bd/design_1/ip/design_1_IMU_relay_0_0/sim/design_1_IMU_relay_0_0.v" \
+
+vlog -work axis_infrastructure_v1_1_1  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
+
+vlog -work axis_register_slice_v1_1_35  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/be12/hdl/axis_register_slice_v1_1_vl_rfs.v" \
+
+vlog -work axis_switch_v1_1_35  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_xbar_0/sim/design_1_axis_interconnect_0_imp_xbar_0.v" \
+"../../../bd/design_1/ip/design_1_IMU_relay_1_0/sim/design_1_IMU_relay_1_0.v" \
+"../../../bd/design_1/ip/design_1_I2C_Reader_1_0/sim/design_1_I2C_Reader_1_0.v" \
+"../../../bd/design_1/ip/design_1_IMU_relay_2_0/sim/design_1_IMU_relay_2_0.v" \
+"../../../bd/design_1/ip/design_1_I2C_Reader_2_0/sim/design_1_I2C_Reader_2_0.v" \
+"../../../bd/design_1/ip/design_1_I2C_Reader_3_0/sim/design_1_I2C_Reader_3_0.v" \
+"../../../bd/design_1/ip/design_1_IMU_relay_3_0/sim/design_1_IMU_relay_3_0.v" \
+"../../../bd/design_1/ip/design_1_I2C_Reader_4_0/sim/design_1_I2C_Reader_4_0.v" \
+"../../../bd/design_1/ip/design_1_IMU_relay_4_0/sim/design_1_IMU_relay_4_0.v" \
+
+vcom -work axi_datamover_v5_1_37  -93  \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd" \
+
+vcom -work axi_sg_v4_1_21  -93  \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/b193/hdl/axi_sg_v4_1_rfs.vhd" \
+
+vcom -work axi_dma_v7_1_36  -93  \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/cb19/hdl/axi_dma_v7_1_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/design_1/ip/design_1_axi_dma_0_0/sim/design_1_axi_dma_0_0.vhd" \
+
+vlog -work generic_baseblocks_v2_1_2  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+
+vlog -work fifo_generator_v13_2_13  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/dc46/simulation/fifo_generator_vlog_beh.v" \
+
+vcom -work fifo_generator_v13_2_13  -93  \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/dc46/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+vlog -work fifo_generator_v13_2_13  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/dc46/hdl/fifo_generator_v13_2_rfs.v" \
+
+vlog -work axi_data_fifo_v2_1_35  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/4846/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
+
+vlog -work axi_crossbar_v2_1_37  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/sim/design_1_axi_mem_intercon_imp_xbar_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+vlog -work xlconcat_v2_1_7  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_s_arb_req_suppress_concat_0/sim/design_1_axis_interconnect_0_imp_s_arb_req_suppress_concat_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_k_0/hdl/tdata_design_1_axis_interconnect_0_imp_auto_ss_k_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_k_0/hdl/tuser_design_1_axis_interconnect_0_imp_auto_ss_k_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_k_0/hdl/tstrb_design_1_axis_interconnect_0_imp_auto_ss_k_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_k_0/hdl/tkeep_design_1_axis_interconnect_0_imp_auto_ss_k_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_k_0/hdl/tid_design_1_axis_interconnect_0_imp_auto_ss_k_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_k_0/hdl/tdest_design_1_axis_interconnect_0_imp_auto_ss_k_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_k_0/hdl/tlast_design_1_axis_interconnect_0_imp_auto_ss_k_0.v" \
+
+vlog -work axis_subset_converter_v1_1_35  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/26da/hdl/axis_subset_converter_v1_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_k_0/hdl/top_design_1_axis_interconnect_0_imp_auto_ss_k_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_k_0/sim/design_1_axis_interconnect_0_imp_auto_ss_k_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_slidr_0/hdl/tdata_design_1_axis_interconnect_0_imp_auto_ss_slidr_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_slidr_0/hdl/tuser_design_1_axis_interconnect_0_imp_auto_ss_slidr_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_slidr_0/hdl/tstrb_design_1_axis_interconnect_0_imp_auto_ss_slidr_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_slidr_0/hdl/tkeep_design_1_axis_interconnect_0_imp_auto_ss_slidr_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_slidr_0/hdl/tid_design_1_axis_interconnect_0_imp_auto_ss_slidr_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_slidr_0/hdl/tdest_design_1_axis_interconnect_0_imp_auto_ss_slidr_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_slidr_0/hdl/tlast_design_1_axis_interconnect_0_imp_auto_ss_slidr_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_slidr_0/hdl/top_design_1_axis_interconnect_0_imp_auto_ss_slidr_0.v" \
+"../../../bd/design_1/ip/design_1_axis_interconnect_0_imp_auto_ss_slidr_0/sim/design_1_axis_interconnect_0_imp_auto_ss_slidr_0.v" \
+
+vlog -work axi_protocol_converter_v2_1_36  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/sim/design_1_axi_mem_intercon_imp_auto_pc_0.v" \
+"../../../bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_1/sim/design_1_axi_mem_intercon_imp_auto_pc_1.v" \
+
+vlog -work axi_clock_converter_v2_1_34  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+
+vlog -work blk_mem_gen_v8_4_11  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a32c/simulation/blk_mem_gen_v8_4.v" \
+
+vlog -work axi_dwidth_converter_v2_1_36  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/db4c/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" "+incdir+../../../../Care-Spine.gen/sources_1/bd/design_1/ipshared/434f/hdl" "+incdir+../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" "+incdir+C:/Xilinx/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/sim/design_1_axi_mem_intercon_imp_auto_us_0.v" \
+"../../../bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_2/sim/design_1_axi_mem_intercon_imp_auto_pc_2.v" \
+"../../../bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/sim/design_1_axi_mem_intercon_imp_auto_us_1.v" \
+
+vlog -work xil_defaultlib \
+"glbl.v"
+

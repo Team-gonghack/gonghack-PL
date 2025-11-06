@@ -1,0 +1,35 @@
+######################################################################################
+# This is a generated CSV file representing the addressing in design design_1
+#
+# Format:
+# Master Segment Name, Address Space, Slave Segment, Offset, Range ...
+#      Excluded (optional), Included (optional), Unassigned (optional)
+######################################################################################
+
+# 
+# Assignments in Address Space /axi_dma_0/Data_MM2S
+#
+SEG_processing_system7_0_HP0_DDR_LOWOCM,/axi_dma_0/Data_MM2S,/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM,0x00000000,1G
+# 
+# Assignments in Address Space /axi_dma_0/Data_S2MM
+#
+SEG_processing_system7_0_HP0_DDR_LOWOCM,/axi_dma_0/Data_S2MM,/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM,0x00000000,1G
+# 
+# Assignments in Address Space /axi_dma_0/Data_SG
+#
+SEG_processing_system7_0_HP0_DDR_LOWOCM,/axi_dma_0/Data_SG,/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM,0x00000000,1G
+# 
+# Assignments in Address Space /processing_system7_0/Data
+#
+SEG_axi_dma_0_Reg,/processing_system7_0/Data,/axi_dma_0/S_AXI_LITE/Reg,0x40400000,64K
+SEG_axi_uartlite_0_Reg,/processing_system7_0/Data,/axi_uartlite_0/S_AXI/Reg,0x42C00000,64K
+SEG_IMU_relay_0_S00_AXI_reg,/processing_system7_0/Data,/IMU_relay_0/S00_AXI/S00_AXI_reg,0x43C10000,64K
+SEG_IMU_relay_1_S00_AXI_reg,/processing_system7_0/Data,/IMU_relay_1/S00_AXI/S00_AXI_reg,0x43C20000,64K
+SEG_IMU_relay_2_S00_AXI_reg,/processing_system7_0/Data,/IMU_relay_2/S00_AXI/S00_AXI_reg,0x43C30000,64K
+SEG_IMU_relay_3_S00_AXI_reg,/processing_system7_0/Data,/IMU_relay_3/S00_AXI/S00_AXI_reg,0x43C40000,64K
+SEG_IMU_relay_4_S00_AXI_reg,/processing_system7_0/Data,/IMU_relay_4/S00_AXI/S00_AXI_reg,0x43C50000,64K
+SEG_I2C_Reader_0_S00_AXI_reg,/processing_system7_0/Data,/I2C_Reader_0/S00_AXI/S00_AXI_reg,0x43C60000,64K
+SEG_I2C_Reader_1_S00_AXI_reg,/processing_system7_0/Data,/I2C_Reader_1/S00_AXI/S00_AXI_reg,0x43C70000,64K
+SEG_I2C_Reader_2_S00_AXI_reg,/processing_system7_0/Data,/I2C_Reader_2/S00_AXI/S00_AXI_reg,0x43C80000,64K
+SEG_I2C_Reader_3_S00_AXI_reg,/processing_system7_0/Data,/I2C_Reader_3/S00_AXI/S00_AXI_reg,0x43C90000,64K
+SEG_I2C_Reader_4_S00_AXI_reg,/processing_system7_0/Data,/I2C_Reader_4/S00_AXI/S00_AXI_reg,0x43CA0000,64K
